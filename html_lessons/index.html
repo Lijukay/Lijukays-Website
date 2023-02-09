@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--This is declaring the document type (html)-->
+<html lang="en">
+  <!--Every html-file needs to start with the html-tag, the lang attribute is telling what language this document uses-->
+  <head>
+    <!--Except for some exceptions, this is not visible to the user but includes some "important" data just like the meta-data and the title our browser uses to name the tab-->
+    <meta charset="UTF-8" />
+    <!--This is the common character set (UTF-8)-->
+    <meta name="author" content="Lijukay" />
+    <!--This is telling the browser who the author of this website is-->
+    <meta name="description" content="This page is for learning html" />
+    <!--This is giving the browser necessary description of what this website is-->
+    <title>My first webpage</title>
+    <!--This is the title. The browser uses it to set the name of the tab to the title (here: My first webpage)-->
+    <link rel="icon" href="screenshot.png" type="image/x-icon" />
+    <!--This is setting the icon of my website-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--This is setting the style of my website-->
+  </head>
+  <body>
+    <!--This is visible to the user-->
+    <h1>Learning HTML</h1>
+    <!--This is creating a big headline. Per page, there should only be one <h1>-tag-->
+
+    <hr />
+    <!--This is creating a horizontal line that seperates the things above this tag with the things below this tag-->
+
+    <h2>About this page</h2>
+    <p>
+      This page has been created by Lijukay in order to learn html (and html
+      ONLY). However, it could be, that this page uses files with other
+      programming-languages. The main focus is not on these files. I am just
+      learning with a YouTube video that includes some of these things.
+      <br />Quick links
+    </p>
+    <nav>
+      <br /><a href="#first">Some html-things</a> <br /><a href="#about"
+        >Copyright and about</a
+      >
+    </nav>
+
+    <hr />
+
+    <section id="first">
+      <h2>Some html-things</h2>
+      <!--This is creating a less big headline-->
+      <p>Here are some basics you might want to know about html:</p>
+      <!--This creates a normal text line-->
+      <ul>
+        <li>
+          Text between &lt;h1&gt; and &lt;/h1&gt; is shown as a big title. This
+          'h1'-tag is only used once a page mostly
+        </li>
+        <li>
+          Text between &lt;h2&gt; and &lt;/h2&gt; is shown as a less big title
+          than what the h1-tag offers and is used more often
+        </li>
+
+        <li>
+          Text between &lt;h3&gt; and &lt;/h3&gt; is shown as a even lesser big
+          title.
+        </li>
+
+        <li>The tag &lt;br&gt; creates a break (A new line)</li>
+
+        <li>The text between &lt;em&gt; and &lt;/em&gt; is <em>italic</em></li>
+
+        <li>
+          The text between &lt;strong&gt; and &lt;/strong&gt; is shown
+          <strong>bigger</strong>
+        </li>
+
+        <li>
+          An unordered list can be created by using &lt;ul&gt; and &lt;/ul&gt;
+          <br />To list things, between these tags, create &lt;li&gt; and
+          &lt;/li&gt; and write the list-item between it
+        </li>
+
+        <li>
+          The tag &lt;abbr&gt; or &lt;/abbr&gt; is creating showing the website,
+          that this is an abbriviation. It requires the attribute title followed
+          by the explanation of the abbriviation, which is visible in the
+          website by hovering above the abbriviation. For example:
+          <br />&lt;abbr title="by the way"&gt;btw&lt;/em&gt; gives you
+          following output: <br /><abbr title="by the way">btw</abbr>
+        </li>
+
+        <li>
+          Text between &lt;address&gt; and &lt;/address&gt; is counted as an
+          address by the browser. For example:
+          <address>60 Broadway, London, W81 0QI</address>
+        </li>
+
+        <li>
+          &lt;section id=""&gt; and &lt;/section&gt; with
+          <strong>everything</strong> the section should include in between
+          these tags creates sections you can refer to with the &lt;a
+          href="<em>id</em>"&gt; and &lt;/a&gt; tags by changing
+          <em>id</em> with # followed by the id of the section is
+        </li>
+
+        <li>
+          &lt;a href="<em>link</em>"&gt; and &lt;/a&gt; creates a clickable
+          thing that leads you to whatever <em>link</em> is.
+        </li>
+
+        <li>
+          &lt;a href="<em>link</em>" download&gt; and &lt;/a&gt; creates a
+          clickable thing that lets you download whatever <em>link</em> is:
+          <br />
+          Download <a href="screenshot.png" download>Screenshot</a>
+        </li>
+
+        <li>
+          &lt;a href="<em>mailto:link</em>"&gt; and &lt;/a&gt; creates a
+          clickable thing that lets you email whatever <em>link</em> is as long
+          as mailto: is mentioned: <br />
+          Email me at <a href="mailto:random@email.com">email</a>
+        </li>
+        <li>
+          &lt;a href="<em>tel:link</em>"&gt; and &lt;/a&gt; creates a clickable
+          thing that lets you call whatever <em>link</em> is as long as tel: is
+          present: <br />
+          Call <a href="tel:+000000000" download>Me</a>
+        </li>
+
+        <li>
+          &lt;a href="<em>link</em>" target="_blank"&gt; and &lt;/a&gt; creates
+          a clickable thing that lets you open whatever <em>link</em> is in a
+          new tab: <br />
+          Open <a href="https://www.google.com/" target="_blank">Google</a>
+        </li>
+
+        <li>
+          With &, you can create some special things for your application, based
+          on the string-"code" that follows. For example: <br />&nbsp;nbsp;
+          creates a non-breaking-space, so a space
+        </li>
+      </ul>
+    </section>
+    <hr />
+    <section id="about">
+      &copy;<a href="aboutme.html">Lijukay</a> <br />Creator of
+      <a href="https://github.com/Lijukay/Qwotable/tree/master">Qwotable</a>
+      <a href="#">Back to top</a>
+    </section>
+  </body>
+  <!--This is a comment btw-->
+</html>
