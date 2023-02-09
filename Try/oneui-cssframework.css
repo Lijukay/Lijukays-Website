@@ -88,6 +88,13 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .card-container {
   display: flex;
   justify-content: space-between;
