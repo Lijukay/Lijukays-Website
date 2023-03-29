@@ -28,8 +28,10 @@ if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 ) {
+  body.classList.add("dark");
   modeText.innerText = "Light mode";
 } else {
+  body.classList.remove("dark");
   modeText.innerText = "Dark mode";
 }
 
