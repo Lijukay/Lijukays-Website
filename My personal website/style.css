@@ -320,3 +320,45 @@ body.dark .switch::before {
 body.dark .home .text {
   color: var(--text-color);
 }
+
+/* styles for small screens */
+@media (max-width: 768px) {
+  /* set the position of the sidebar to fixed */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* hide the sidebar off-screen by default */
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999; /* make sure the sidebar appears on top */
+    transition: left 0.3s ease-in-out;
+  }
+
+  /* add a class to the sidebar when it's open */
+  .sidebar.open {
+    left: 0;
+  }
+
+  /* overlap the content of the section */
+  .section {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); /* adjust the opacity to your liking */
+    z-index: -1;
+  }
+}
