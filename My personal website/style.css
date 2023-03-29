@@ -318,7 +318,7 @@ body.dark .switch::before {
   top: 0;
   left: 78px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /*width: calc(100% - 78px);*/
   padding-left: 55px;
 }
@@ -329,7 +329,7 @@ body.dark .switch::before {
   top: 0;
   left: 78px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /*width: calc(100% - 78px);*/
   padding-left: 55px;
 }
