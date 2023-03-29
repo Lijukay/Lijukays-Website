@@ -36,5 +36,6 @@ if (
 window
   .matchMedia("(prefers-color-scheme: dark)")
   .addEventListener("change", (event) => {
+    body.classList.toggle("dark");
     const newColorScheme = event.matches ? "dark" : "light";
   });
