@@ -23,3 +23,18 @@ const toggleButton = document.querySelector(".toggle-button");
 home.addEventListener("click", () => {
   sidebar.classList.add("close");
 });
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  modeText.innerText = "Light mode";
+} else {
+  modeText.innerText = "Dark mode";
+}
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    const newColorScheme = event.matches ? "dark" : "light";
+  });
