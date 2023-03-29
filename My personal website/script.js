@@ -12,7 +12,6 @@ toggle.addEventListener("click", () => {
 
 modeSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
-
   if (body.classList.contains("dark")) {
     modeText.innerText = "Light mode";
   } else {
