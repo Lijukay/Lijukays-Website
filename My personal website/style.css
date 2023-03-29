@@ -336,6 +336,11 @@ body.dark .home .text {
     border-top-right-radius: 24px;
   }
 
+  .sidebar.close {
+    width: 88px;
+    z-index: 999;
+  }
+
   .home {
     position: absolute;
     top: 0;
