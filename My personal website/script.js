@@ -10,10 +10,6 @@ toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
-searchBtn.addEventListener("click", () => {
-  sidebar.classList.remove("close");
-});
-
 modeSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
 
@@ -25,12 +21,6 @@ modeSwitch.addEventListener("click", () => {
 });
 const toggleButton = document.querySelector(".toggle-button");
 
-body.addEventListener("click", (event) => {
-  const target = event.target;
-  const isClickInsideSidebar = sidebar.contains(target);
-  const isClickInsideToggleButton = toggleButton.contains(target);
-
-  if (!isClickInsideSidebar && !isClickInsideToggleButton) {
-    home.classList.remove("close");
-  }
+home.addEventListener("click", () => {
+  sidebar.classList.add("close");
 });

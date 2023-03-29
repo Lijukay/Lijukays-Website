@@ -11,16 +11,16 @@
   /* ===== Colors ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #695cfe;
+  --primary-color: #707070;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
 
   /* ====== Transition ====== */
-  --tran-03: all 0.2s ease;
+  --tran-02: all 0.2s ease;
   --tran-03: all 0.3s ease;
-  --tran-04: all 0.3s ease;
-  --tran-05: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
 }
 
 body {
@@ -52,10 +52,10 @@ body.dark {
   width: 250px;
   padding: 10px 14px;
   background: var(--sidebar-color);
-  transition: var(--tran-05);
+  transition: var(--tran-02);
   z-index: 100;
-  border-bottom-right-radius: 24px;
-  border-top-right-radius: 24px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .sidebar.close {
   width: 88px;
@@ -136,6 +136,13 @@ header .image-text .profession {
 .sidebar header .image img {
   width: 40px;
   border-radius: 6px;
+  transition: var(--tran-03);
+}
+
+.sidebar header .image img:hover {
+  width: 40px;
+  border-radius: 25px;
+  transition: var(--tran-03);
 }
 
 .sidebar header .toggle {
@@ -151,7 +158,7 @@ header .image-text .profession {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 25px;
   cursor: pointer;
   transition: var(--tran-05);
 }
@@ -308,8 +315,7 @@ body.dark .switch::before {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-color);
-  padding: 12px 60px;
-  margin-top: 5px;
+  padding: 6px 60px;
 }
 
 .sidebar.close ~ .home {
@@ -336,4 +342,59 @@ body.dark .switch::before {
 
 body.dark .home .text {
   color: var(--text-color);
+}
+
+.home .homeimage {
+  margin: 12px 60px;
+  border-radius: 24px;
+  transition: var(--tran-03);
+}
+
+.home .homeimage:hover {
+  margin: 12px 60px;
+  border-radius: 50px;
+  transition: var(--tran-03);
+}
+
+.home .textdescription a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body.dark .home .textdescription a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.home .textdescription a:hover {
+  color: #18191a;
+}
+
+body.dark .home .textdescription a:hover {
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  max-height: 100vh;
+  background: #fff;
+  box-shadow: none;
+  padding: 10px 10px;
+  border-radius: 24px;
+  margin: 12px 60px;
+}
+
+.container .containerImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.container .ContainerText {
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--text-color);
+  margin-left: 10px;
 }
