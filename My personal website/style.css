@@ -347,4 +347,18 @@ body.dark .home .text {
     background-color: var(--body-color);
     transition: var(--tran-05);
   }
+
+  .section {
+    position: relative;
+  }
+  .section h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .section p {
+    position: relative;
+    z-index: 2;
+  }
 }
