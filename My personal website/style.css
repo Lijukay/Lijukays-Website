@@ -288,13 +288,12 @@ body.dark .switch::before {
 }
 
 .home {
-  position: absolute;
+  position: flex;
   top: 0;
   top: 0;
   left: 250px;
   height: 100vh;
-  /*width: calc(100% - 250px);*/
-  width: 100vw;
+  width: calc(100% - 250px);
   background-color: var(--body-color);
   transition: var(--tran-05);
 }
@@ -314,10 +313,25 @@ body.dark .switch::before {
 }
 
 .sidebar.close ~ .home {
+  position: flex;
+  top: 0;
+  top: 0;
   left: 78px;
   height: 100vh;
   width: calc(100% - 78px);
+  padding-left: 55px;
 }
+
+.sidebar ~ .home {
+  position: flex;
+  top: 0;
+  top: 0;
+  left: 78px;
+  height: 100vh;
+  width: calc(100% - 78px);
+  padding-left: 55px;
+}
+
 body.dark .home .text {
   color: var(--text-color);
 }
