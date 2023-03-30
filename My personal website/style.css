@@ -208,6 +208,21 @@ body.dark .sidebar header .toggle {
   transition: var(--tran-03);
 }
 
+.sidebar .nav-link-selected {
+  border-radius: 24px;
+  background-color: var(--primary-color);
+}
+
+.sidebar .nav-link-selected .icon,
+.sidebar .nav-link-selected .text {
+  color: var(--sidebar-color);
+}
+
+body.dark .sidebar .nav-link-selected .icon,
+body.dark .sidebar .nav-link-selected .text {
+  color: var(--text-color);
+}
+
 .sidebar li a:hover {
   background-color: var(--primary-color);
 }
