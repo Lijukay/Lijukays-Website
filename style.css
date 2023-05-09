@@ -9,6 +9,20 @@
 
 :root {
   /* ===== Colors ===== */
+  --color-primary-light: #4559a9;
+  --color-background-light: #fefbff;
+  --color-surface-light: #fefbff;
+  --color-on-surface-light: #1b1b1f;
+  --color-secodary-light: #5a5d72;
+  --color-text-light: #000000;
+  
+  --color-primary-dark: #b8c4ff;
+  --color-background-dark: #1b1b1f;
+  --color-surface-dark: #1b1b1f;
+  --color-on-surface-dark: #e4e1e6;
+  --color-secondary-dark: #c2c5dd;
+  --color-text-dark: #ffffff;
+  
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
   --primary-color: #707070;
@@ -30,7 +44,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary-light);
   color: #fff;
 }
 
