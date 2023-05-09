@@ -240,7 +240,7 @@ body.dark .sidebar li a:hover .text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: scroll;
+  overflow: hidden;
   border-bottom-right-radius: 24px;
   border-top-right-radius: 24px;
 }
