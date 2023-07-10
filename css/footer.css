@@ -1,11 +1,12 @@
 footer {
   padding: 70px 0;
-  background-color: var(--secondary-color);
+  background-color: var(--footer-background);
 }
 
 footer h2 {
   font-size: 50px;
   text-align: center;
+  color: var(--footer-card-color);
 }
 
 .grid_container {
@@ -22,12 +23,20 @@ footer h2 {
 }
 
 .grid_item {
-  background-color: var(--primary-color);
+  background-color: var(--footer-card-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
   gap: 50px;
+}
+
+.grid_item h3 {
+  color: var(--footer-background);
+}
+
+.grid_container p {
+  color: var(--footer-background);
 }
 
 .grid_item img {
@@ -42,6 +51,10 @@ footer h2 {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+#item1 p {
+  max-width: 75%;
 }
 
 #item2 {
@@ -74,8 +87,13 @@ footer h2 {
 }
 
 #item5 {
+  flex-direction: column;
   grid-area: item5;
   border-radius: 15px;
+}
+
+#item5 p {
+  max-width: 75%;
 }
 
 @media (max-width: 800px) {

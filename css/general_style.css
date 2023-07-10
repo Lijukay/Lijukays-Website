@@ -6,12 +6,28 @@
   --secondary-color: #2b7e5c;
   --text-color: #ffffff;
   --secondary-text-color: #8dcca5;
+
+  --black: #000;
+  --title-color-red: #ef5350;
+  --text-color-red: #e57373;
+
+  --section3-background: #f8bbd0;
+  --card-color-pink: #ad1475;
+  --title-color-pink: #880e4f;
+
+  --footer-background: #1a237e;
+  --footer-card-color: #8c9eff;
 }
 
 * {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  touch-action: manipulation;
 }
 
 body {
