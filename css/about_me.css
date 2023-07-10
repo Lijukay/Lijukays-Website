@@ -1,5 +1,6 @@
 #about_me_section {
-  padding: 0 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--black);
   display: flex;
   justify-content: center;

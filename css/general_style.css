@@ -66,3 +66,18 @@ h3 {
     font-size: 16px;
   }
 }
+
+.headertosection1 {
+  height: 135px;
+  background: linear-gradient(#155f3f, #000);
+}
+
+.section1tosection2 {
+  height: 135px;
+  background: linear-gradient(#000, #f8bbd0);
+}
+
+.section2tofooter {
+  height: 135px;
+  background: linear-gradient(#f8bbd0, #1a237e);
+}
