@@ -17,6 +17,7 @@
 #about_me_section img {
   width: 400px;
   max-width: calc(90%-30px);
+  border-radius: 50px;
 }
 
 #about_me_section h2 {
@@ -24,10 +25,21 @@
   font-size: 80px;
 }
 
+#about_me_section h2::selection,
+#about_me_section p::selection,
+#about_me_section br::selection {
+  background-color: var(--title-color-red);
+  color: var(--black);
+}
+
 #about_me_section p {
   color: var(--text-color-red);
   text-align: justify;
   line-height: 175%;
+}
+
+#about_me_section img::selection {
+  background-color: var(--text-color-red);
 }
 
 @media (max-width: 800px) {

@@ -96,6 +96,20 @@ footer h2 {
   max-width: 75%;
 }
 
+footer h2::selection {
+  background-color: var(--footer-card-color);
+  color: var(--footer-background);
+}
+
+.grid_item p::selection,
+.grid_item h3::selection {
+  background-color: var(--footer-background);
+  color: var(--footer-card-color);
+}
+
+.grid_item img::selection {
+  background-color: var(--footer-card-color);
+}
 @media (max-width: 800px) {
   .grid_container {
     grid-template-columns: 1fr 1fr 1fr;

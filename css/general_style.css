@@ -42,6 +42,21 @@ h1 {
   line-height: 115%;
 }
 
+h1 span {
+  color: var(--main-brand-color);
+}
+
+h1::selection,
+h1 br::selection {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+h1 span::selection {
+  background-color: var(--main-brand-color);
+  color: var(--primary-color);
+}
+
 h3 {
   font-size: 38px;
 }
@@ -49,6 +64,11 @@ h3 {
 .subheading {
   margin-top: 25px;
   color: var(--secondary-text-color);
+}
+
+.subheading::selection {
+  background-color: var(--secondary-text-color);
+  color: var(--primary-color);
 }
 
 /*Gilt nur für Bildschirme, die kleiner als 800px sind*/
