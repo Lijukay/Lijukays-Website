@@ -7,12 +7,13 @@
       content="width=device-width, initial-scale=1.0,
     maximum-scale=1.0, user-scalable=no"
     />
-    <title>Lijucay</title>
+    <title>Lijucay - Personal website</title>
     <link rel="stylesheet" href="css/general_style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about_me.css" />
     <link rel="stylesheet" href="css/work.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/137904_T8tjU7ds.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -30,17 +31,15 @@
           <ul>
             <li><a href="#about_me_section">About me</a></li>
             <li><a href="#my_work_section">My work</a></li>
-            <li><a href="#social_media_section">Contact & social media</a></li>
+            <li><a href="#footer">Contact & social media</a></li>
           </ul>
         </nav>
         <h1>Lijucay, <br /><span>Hobby Developer</span></h1>
         <p class="subheading">Android Apps, Java, Kotlin</p>
       </div>
-      <div class="circle"><img src="img/104652374.png" /></div>
     </header>
     <section class="headertosection1"></section>
     <section id="about_me_section">
-      <img src="img/137904_T8tjU7ds.png" />
       <div class="about_me_container">
         <h2>About me</h2>
         <p>
@@ -69,66 +68,24 @@
             >FDroid</a
           >
         </div>
-        <div class="card">
-          <h3>Home Harmony</h3>
-          <p>An application to make managing the household easier.</p>
-          <a
-            href="https://github.com/Lijukay/HomeHarmony/releases/tag/v.5.0.beta"
-            >GitHub</a
-          >
-        </div>
       </div>
     </section>
     <section class="section2tofooter"></section>
-    <footer id="social_media_section">
-      <h2>Contact & social media</h2>
-      <div class="grid_container">
-        <div
-          class="grid_item"
-          id="item1"
-          onclick="location.href='https://www.instagram.com/lucas_little.world/'"
-        >
-          <img src="img/instagram-167-svgrepo-com (1).svg" alt="" />
-          <div>
-            <h3>Instagram</h3>
-            <p>You can follow and contact me on Instagram right away!</p>
-          </div>
-        </div>
-        <div
-          class="grid_item"
-          id="item2"
-          onclick="location.href='https://t.me/Lijucay'"
-        >
-          <img src="img/social-telegram-svgrepo-com.svg" alt="" />
-          <h3>Telegram</h3>
-        </div>
-        <div class="grid_item" id="item3">
-          <h3>Information</h3>
-          <p>
-            I have limited free time, which means that I am not always fast in
-            answering. Please don't be mad.
-          </p>
-        </div>
-        <div class="grid_item" id="item4">
-          <img
-            src="img/github-svgrepo-com.svg"
-            alt=""
-            onclick="location.href='https://github.com/Lijukay'"
-          />
-          <h3>GitHub</h3>
-        </div>
-        <div class="grid_item" id="item5">
-          <img
-            src="img/twitter-svgrepo-com (1).svg"
-            alt=""
-            onclick="location.href='https://twitter.com/lijukayy'"
-          />
-          <div>
-            <h3>Twitter</h3>
-            <p>Follow me on Twitter and send messages!</p>
-          </div>
-        </div>
-      </div>
+    <footer id="footer">
+      <ul class="social-icon">
+        <!--
+        <li class="social-icon-icon">
+          <a class="social-icon-link" href="">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li> -->
+        <li class="social-icon-icon">
+          <a class="social-icon-link" href="https://github.com/Lijucay">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+      </ul>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>

@@ -25,6 +25,10 @@
   flex-wrap: wrap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   display: none;
   touch-action: manipulation;
